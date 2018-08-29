@@ -46,7 +46,19 @@ small, .font_small {
 /* Utils */
 
 .container {
-    padding: 0 300px;
+    padding: 0 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 100px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        padding: 0 300px;
+    }
 }
 
 .gray-background {
@@ -107,6 +119,7 @@ small, .font_small {
 .tribute-visual__image, .tribute-visual__video {
     display: block;
     margin: auto;
+    max-width: 100%;
 }
 .tribute-visual__caption {
     margin-top: 10px;
